@@ -5,10 +5,10 @@
 #
 #  Created by qcwap on 2020/3/10.
 #  Copyright © 2020 钟先耀. All rights reserved.
-target_file="${PROJECT_DIR}/itlwm/FwBinary.cpp"
-fw_files=${PROJECT_DIR}/itlwm/firmware/*
+target_file="/Users/miguelon/Documents/itlwm/itlwm/FwBinary.cpp"
+fw_files=/Users/miguelon/Documents/itlwm/itlwm/firmware/*
 
-if [!-f target_file]; then
+#if true then
 
 echo "//  itlwm\n\n//  Copyright © 2020 钟先耀. All rights reserved." >$target_file
 echo "#include \"FwData.h\"">>$target_file
@@ -39,4 +39,4 @@ done
 echo "};">>$target_file
 echo "const int fwNumber = $i;">>$target_file
 
-fi
+#fi
